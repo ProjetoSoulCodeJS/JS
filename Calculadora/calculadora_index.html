@@ -8,8 +8,34 @@
     <script src="calculadora.js"></script>
 </head>
 <body>
+    <header>
 
-    <div id="calculadora_simples"></div>
-    
+    <div id="botoes">
+    <div onclick="result(7)" id="botao7"></div>
+    <div onclick="result(8)" id="botao8"></div>
+    <div onclick="result(9)" id="botao9"></div>
+    <div onclick="result(4)" id="botao4"></div>
+    <div onclick="result(5)" id="botao5"></div>
+    <div onclick="result(6)" id="botao6"></div>
+    <div onclick="result(1)" id="botao1"></div>
+    <div onclick="result(2)" id="botao2"></div>
+    <div onclick="result(3)" id="botao3"></div>
+    <div onclick="result(0)" id="botao0"></div>
+    <div value='.' onclick="ponto('.')" id="botao_ponto"></div>
+    <div onclick="result(' ')" id="botao_separar"></div>
+</div>
+
+<div id="funcoes">
+    <div onclick="result('ce')" id="ce"></div>
+    <div onclick="result('c')" id="c"></div>
+    <div value ='/' onclick="div('')" id="dividir"></div>
+    <div value ='*' onclick="mult('')" id="multiplicar"></div>
+    <div value='-' onclick="subtrair('')" id="subtrair"></div>
+    <div onclick="soma('')" id="somar"></div>
+    <div value='=' onclick="resultadoSoma('=')" id="igual"></div>
+</div>
+
+<div id="resultado"></div>
+    </header>
 </body>
 </html>

@@ -1,3 +1,78 @@
 body{
-background-color: #cccccc;
+background-image: url("Capturar.JPG");
+background-repeat: no-repeat;
+background-position-x: 400px;
+background-position-y: 50px;
+}
+
+#botoes{
+position: relative;
+top: 195px;
+left: 425px;
+display: flex;
+width: 250px;
+height:100px;
+flex-wrap: wrap;
+}
+
+#botao1, #botao2, #botao3, #botao4, #botao5, #botao6, #botao7, #botao8, #botao9, #botao0, #botao_ponto, #botao_separar{
+width: 70px;
+height: 70px;
+border: 1px solid;
+}
+
+#botao0{
+position: relative;
+top:5px;
+width: 140px;
+}
+
+#botao_ponto{
+position: relative;
+left: 5px;
+top: 5px;
+}
+
+#botao_separar{
+position: absolute;
+top:317px;
+height: 40px;
+width: 280px;
+}
+
+#funcoes{
+position: relative;
+left: 680px;
+top: 95px;
+display: flex;
+flex-wrap: wrap;
+width: 160px;
+height: 100px;
+}
+
+#ce, #c, #dividir, #multiplicar, #subtrair, #somar, #igual{
+margin-right: 15px;
+margin-bottom: 10px;
+width: 60px;
+height: 60px;
+border: 2px solid;
+}
+
+#somar{
+padding-bottom:80px;
+}
+
+#igual{
+position:relative;
+bottom: 77px;
+left: 2px;
+}
+
+#resultado{
+position: relative;
+left: 420px;
+bottom: 115px;
+width: 405px;
+height:80px;
+border: 1px solid;
 }
