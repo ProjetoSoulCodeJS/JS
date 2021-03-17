@@ -1,25 +1,19 @@
-var valores = []
-
-function result(n){
-valores += (parseInt(document.getElementById('resultado').value = n))
-console.log(valores)
+var valor;
+var resultado;
+function botao(num){
+valor = document.calc.visor.value += num;
 }
 
-function soma(n){
-valores = valores + '+'
+function reseta(num){
+document.calc.visor.value = ''
 }
 
-function subtrair(n){
-valores = valores + '-'
+function calcula (num){
+resultado = eval(valor);
+document.calc.visor.value = resultado
+
 }
 
-function mult(n){
-valores = valores + '*'
-}
-
-function div(n){
-valores = valores + '/'
-}
 
 
 
