@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="coluna-esquerda">
+        <form action="">
+            <h1>Página de Cadastro</h1>
+            <div class="input">
+                <label for="nome">NOME:</label>
+                <input type="text" name="nome" id="nome" placeholder=" NOME COMPLETO" onkeyup="nomeLetrasMaiusculas()">
+            </div>
+
+            <div class="input">
+                <label for="cpf">CPF: </label>
+                <input type="text" name="cpf" id="cpf" placeholder="CPF (somente números)" onblur=" valida()" required>
+            </div>
+
+            <div class="input">
+                <label for="diaNascimento">Dia do Nascimento</label>
+                <input type="number" id="diaNascimento" placeholder=" Dia do Nascimento" onchange="dataNascimentoDia()">
+            </div>
+
+            <div class="input">
+                <label for="mesNascimento">Mês do Nascimento</label>
+                <select id="mesNascimento" onchange="mes()">
+                    <option value="0">Clique Aqui</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+            </div>
+
+            <div class="input">
+                <label for="anoNascimento">Ano do Nascimento</label>
+                <input type="number" id="anoNascimento" placeholder=" Ano" onchange="dataNascimentoAno()">
+            </div>
+
+            <div class="input">
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" placeholder="E-mail" onchange="validacaoEmail(this)">
+            </div>
+
+            <div class="input">
+                <label for="sexo">Sexo</label>
+                <select id="sexo" onchange="sexoInformado()">
+                    <option value="">Clique Aqui</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Não Informado">Não Informado</option>
+                </select>
+            </div>
+
+            <button type="button" onclick = "escreve()">Enviar</button>
+        </form>
+    </section>
+    <section class="coluna-direita">
+        <section id="info">
+        </section>
+        <section id="link">
+          <a href="#">Voltar à Página Inicial</a>
+        </section>
+    </main>
+
+    <script src="cadastro.js"></script>
+</body>
+
+</html>
