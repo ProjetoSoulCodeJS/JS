@@ -8,35 +8,35 @@ valor = document.calc.visor.value += 3.14;
 }
 
 else if(num == 'sin'){
-valor = document.calc.visor.value = Math.sin(valor)
+valor = document.calc.visor.value = Math.sin(valor|resultado)
 }
 
 else if(num == 'cos'){
-    valor = document.calc.visor.value = Math.cos(valor)
+    valor = document.calc.visor.value = Math.cos(valor|resultado)
 }
 
 else if(num == 'tan'){
-    valor = document.calc.visor.value = Math.tan(valor) 
+    valor = document.calc.visor.value = Math.tan(valor|resultado) 
 }
 
 else if(num == 'log2'){
-    valor = document.calc.visor.value = Math.log2(valor) 
+    valor = document.calc.visor.value = Math.log2(valor|resultado) 
 }
 
 else if(num == 'log10'){
-    valor = document.calc.visor.value = Math.log10(valor) 
+    valor = document.calc.visor.value = Math.log10(valor|resultado) 
 }
 
 else if(num == '^2'){
-    valor = document.calc.visor.value = Math.pow(valor, 2) 
+    valor = document.calc.visor.value = Math.pow(valor|resultado, 2) 
 }
 
 else if(num == '^3'){
-    valor = document.calc.visor.value = Math.pow(valor, 3) 
+    valor = document.calc.visor.value = Math.pow(valor|resultado, 3) 
 }
 
 else if(num == '√'){
-    valor = document.calc.visor.value = Math.sqrt(valor) 
+    valor = document.calc.visor.value = Math.sqrt(valor|resultado) 
 }
 
 else{
