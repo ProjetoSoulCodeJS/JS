@@ -8,35 +8,84 @@
     <script src="calculadora.js"></script>
 </head>
 <body>
-    <header>
 
+
+
+    <div id="botao_liga">
+        <input type=button value="LIGAR CALCULADORA" id="enable" onclick="ligar(0)">
+        <input type=button value="LIGAR CALCULADORA" id="enable1"onclick="ligar(1)">
+    </div> 
+
+
+
+    <header>
+    <div id="botao_desliga">
+    <div id="disable_bt" class="disable"></div> 
+    <div id="disable1_bt" class="disable1"></div>     
+</div> 
+<div id="calculadora_cient">
     <form action="" name="calc">
-    <div id="calculadora">
-    <input type="text" id="visor" name="visor">
+    <input type="text" id="visor_cient" class="" name="visor">
     <div id="botoes">
+    <input class="block" type="button" value="π" id="botoes_especiais" onclick="botao(value)">
+    <input type="button" value="sin" id="botoes_especiais" onclick="botao(value)">
+    <input type="button" value="cos" id="botoes_especiais" onclick="botao(value)">
+    <input type="button" value="tan" id="botoes_especiais" onclick="botao(value)">
+    <input type="button" value="c" id="botoes" class="limpar" onclick="reseta(value)">
+    <input type="button" value="log2" id="botoes_especiais" onclick="botao(value)">
+    <input type="button" value="log10" id="botoes_especiais" onclick="botao(value)">
+    <input type="button" value="^2" id="botoes_especiais" onclick="botao(value)">
+    <input type="button" value="^3" id="botoes_especiais" onclick="botao(value)">
+    <input type="button" value="√" id="botoes_especiais" onclick="botao(value)">
     <input type="button" value="7" id="botoes" onclick="botao(value)">
     <input type="button" value="8" id="botoes" onclick="botao(value)">
     <input type="button" value="9" id="botoes" onclick="botao(value)">
-    <input type="button" value="c" id="botoes" class="limpar" onclick="reseta(value)">
+    <input type="button" value="+" id="botoes_especiais" onclick="botao(value)">
+    <input type="button" value="-" id="botoes_especiais" onclick="botao(value)">
     <input type="button" value="4" id="botoes" onclick="botao(value)">
     <input type="button" value="5" id="botoes" onclick="botao(value)">
     <input type="button" value="6" id="botoes" onclick="botao(value)">
     <input type="button" value="*" id="botoes_especiais" onclick="botao(value)">
+    <input type="button" value="/" id="botoes_especiais" onclick="botao(value)">
     <input type="button" value="1" id="botoes" onclick="botao(value)">
     <input type="button" value="2" id="botoes" onclick="botao(value)">
     <input type="button" value="3" id="botoes" onclick="botao(value)">
-    <input type="button" value="-" id="botoes_especiais" onclick="botao(value)">
-    <input type="button" value="." id="botoes" onclick="botao(value)">
     <input type="button" value="0" id="botoes" onclick="botao(value)">
-    <input type="button" value="/" id="botoes" onclick="botao(value)">
-    <input type="button" value="+" id="botoes_especiais" onclick="botao(value)">
-    <input type="button" value="=" id="botoes" class="igual" onclick="calcula(value)">
-    
-    
-    
+    <input type="button" value="." id="botoes" onclick="botao(value)">
+    <input type="button" value="=" id="botoes" class="igual_cient" onclick="calcula(value)"> 
+    </div> 
+    </form>
+</div>
 
+
+
+    <form action="" name="calc2">
+    <div id="calculadora">
+    <input type="text" id="visor" class="" name="visor">
+    <div id="botoes">
+    <input type="button" value="7" id="botoes" onclick="botao2(value)">
+    <input type="button" value="8" id="botoes" onclick="botao2(value)">
+    <input type="button" value="9" id="botoes" onclick="botao2(value)">
+    <input type="button" value="c" id="botoes" class="limpar" onclick="reseta2(value)">
+    <input type="button" value="4" id="botoes" onclick="botao2(value)">
+    <input type="button" value="5" id="botoes" onclick="botao2(value)">
+    <input type="button" value="6" id="botoes" onclick="botao2(value)">
+    <input type="button" value="*" id="botoes_especiais" onclick="botao2(value)">
+    <input type="button" value="1" id="botoes" onclick="botao2(value)">
+    <input type="button" value="2" id="botoes" onclick="botao2(value)">
+    <input type="button" value="3" id="botoes" onclick="botao2(value)">
+    <input type="button" value="-" id="botoes_especiais" onclick="botao2(value)">
+    <input type="button" value="." id="botoes" onclick="botao2(value)">
+    <input type="button" value="0" id="botoes" onclick="botao2(value)">
+    <input type="button" value="/" id="botoes_especiais" onclick="botao2(value)">
+    <input type="button" value="+" id="botoes_especiais" onclick="botao2(value)">
+    <input type="button" value="=" id="botoes" class="igual" onclick="calcula2(value)"> 
+    </div>
+    </div>
 </div>
-</div>
+    </form> 
 </header>
+
+
 </body>
 </html>

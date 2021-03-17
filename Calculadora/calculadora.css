@@ -1,27 +1,135 @@
-header{
+#botao_liga{
 width: 100%;
+height: 100px;
+position:relative;
+top: 40px;
 display: flex;
-justify-content:center;
-align-items:center;
+justify-content: center;
 }
 
-#calculadora{
+#botao_desliga{
 position: relative;
-top: 61px;
+top: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#enable{
+position: absolute;
+font-size: 16px;
+width: 200px;
+height: 50px;
+left: 300px;
+margin-right: 320px;
+}
+
+#enable1{
+font-size: 16px;
+position: relative;
+left: 250px;
+width: 200px;
+height: 50px;
+}
+
+
+.disable{
+position: absolute;
+left: 215px;
+margin-right: 50px;
+bottom: 100px;
+z-index: 1;
+width: 370px;
+height: 585px;
+opacity: 0.5;
+background-color: rgb(0, 0, 0);
+border-radius: 15px;
+}
+
+.disable_change{
+
+z-index: 0;
+width: 370px;
+height: 585px;
+opacity: 1;
+background-color: rgb(0, 0, 0);
+}
+
+.disable1{
+z-index: 1;
+position:relative;
+bottom: 10px;
+width: 480px;
+left: 245px;
+height: 680px;
+opacity: 0.7;
+background-color: rgb(0, 0, 0);
+border-radius: 15px;
+}
+
+.disable1_change{
+z-index: 0;
+position:relative;
+bottom: 10px;
+width: 480px;
+right: 5px;
+height: 680px;
+opacity: 1;
+background-color: rgb(0, 0, 0);
+border-radius: 15px;
+}
+
+
+#calculadora{
+position: absolute;
+top: 230px;
+left: 240px;
 width: 332px;
 }
+
+#calculadora_cient{
+position: absolute;
+top: 230px;
+left: 53%;
+width: 450px;
+}
+
+
+.igual_cient{
+width:416px;
+background-color: red;
+}
+
 
 input{
 width: 80px;
 height: 80px;
 font-size: 30px;
+border-radius: 15px;
 }
 
+
 #visor{
+position: relative;
+bottom: 20px;
 color: white;
 width: 325px;
-background-color:rgb(59, 59, 59)
 }
+
+#visor_cient{
+position: relative;
+bottom: 20px;
+color: white;
+width: 408px;
+}
+
+.visor_cient2{
+position: relative;
+z-index: 1;
+background-color:rgb(30, 177, 42)
+}
+
+
 
 .igual{
 width: 333px;
