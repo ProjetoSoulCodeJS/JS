@@ -31,30 +31,28 @@
 				
 			}
 			
-			if(opcao==2){
-			  resultado = document.getElementById("valorFinal").innerHTML = (valor/dolarCanadense * dolarAmericano).toFixed(2);			
-				
+			switch (opcao, opcao2){
+			case 1:
+			resultado = document.getElementById("valorFinal").innerHTML = (valor/dolarAmericano * realBrasileiro).toFixed(2);
+			break;	
+			case 2:
+			resultado = document.getElementById("valorFinal").innerHTML = (valor/dolarCanadense * realBrasileiro).toFixed(2);
+			break;	
+			case 3:
+			resultado = document.getElementById("valorFinal").innerHTML = (valor/euro * realBrasileiro).toFixed(2);
+			break;	
+			case 4:
+			resultado = document.getElementById("valorFinal").innerHTML = (valor/libra * realBrasileiro).toFixed(2);
+			break;	
+			case 5:
+			resultado = document.getElementById("valorFinal").innerHTML = (valor/dolarAmericano * realBrasileiro).toFixed(2);
+			break;	
+			case 6:
+			resultado = document.getElementById("valorFinal").innerHTML = (valor/dolarAmericano * realBrasileiro).toFixed(2);
+			break;	
+			case 7:
+			resultado = document.getElementById("valorFinal").innerHTML = (valor/dolarAmericano * realBrasileiro).toFixed(2);
+			break;	
 			}
-			
-			if(opcao==3){
-			  resultado = document.getElementById("valorFinal").innerHTML = (valor/realBrasileiro).toFixed(2);			
-				
-			}
-			
-			if(opcao==4){
-			  resultado = document.getElementById("valorFinal").innerHTML = (valor/euro).toFixed(2);			
-				
-			}
-
-			if(opcao==5){
-			  resultado = document.getElementById("valorFinal").innerHTML = (valor/libra).toFixed(2);			
-				
-			}
-
-			if(opcao==6){
-			   resultado = document.getElementById("valorFinal").innerHTML = (valor/pesoArgentino).toFixed(2);			
-			}
-            if(opcao == 1 && opcao2 == 7)
-			  resultado = document.getElementById("valorFinal").innerHTML = (valor/2).toFixed(2);
 		}
 		
