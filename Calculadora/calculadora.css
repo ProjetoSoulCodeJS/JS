@@ -6,7 +6,9 @@ padding:0;
 body{
 background-color:rgb(72, 99, 255);
 }
-    
+
+/*Menu*/
+
 #menu{
 margin-bottom: 60px;
 background-color: white;
@@ -42,8 +44,12 @@ background-color: rgb(92, 94, 255);
 color: white;
 }
 
+/*Menu*/
 
 
+
+
+/*Calculadora div completa*/
 #calculadoras{
 position: relative;
 top: 40px;
@@ -53,7 +59,12 @@ justify-content: center;
 align-items: center;
 height: 850px;
 }
+/*Calculadora div completa*/
 
+
+
+
+/*divs de disable das calculadoras*/
 .disable{
 position: absolute;
 left: 0;
@@ -108,7 +119,13 @@ border: 10px solid ;
 border-color: rgb(0, 24, 131);
 
 }
+/*divs de disable das calculadoras*/
 
+
+
+
+
+/*primeira e segunda calculadora individual*/
 
 #calculadora{
 padding: 20px;
@@ -164,6 +181,13 @@ border-color: rgb(0, 31, 116);
 color: white;
 background-color: rgb(0, 0, 114);
 }
+/*primeira e segunda calculadora individual*/
+
+
+
+
+
+/*numerais da calculadora*/
 
 input{
 position: relative;
@@ -209,6 +233,7 @@ background-color: rgb(187, 0, 0);
 }
 
 #enable{
+font-weight: 600;
 z-index: 1;
 position: absolute;
 font-size: 16px;
@@ -217,6 +242,7 @@ height: 50px;
 left: 29px;
 top: 40px;
 margin-right: 320px;
+transition: 100ms;
 }
 
 #enable:hover{
@@ -226,6 +252,7 @@ border-color: rgb(66, 66, 66);
 }
     
 #enable1{
+font-weight: 600;
 z-index: 1;
 font-size: 16px;
 position: absolute;
@@ -233,6 +260,7 @@ left: 37px;
 top: 134px;
 width: 100px;
 height: 50px;
+transition: 100ms;
 }
 
 #enable1:hover{
@@ -240,6 +268,12 @@ background-color: rgb(73, 73, 73);
 color: white;
 border-color: rgb(66, 66, 66);
 }
+/*numerais da calculadora*/
+
+
+
+
+/*Estrutura do site em cascata*/
 
 #calc_title{
 margin: 0 auto;
@@ -318,3 +352,5 @@ background-color:rgb(0, 34, 228);
 textarea:focus, input:focus, select:focus {
 outline: 0;
 } 
+
+/*Estrutura do site em cascata*/
