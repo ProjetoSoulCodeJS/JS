@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--CALCULADORA PARA CONVERTER REAL PARA OUTRAS MOEDAS-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="moeda.css">
+    <script language="JavaScript" src="moeda.js"></script>
+</head>
+<body>	
+	<form>
+		<div id="div1">
+			<center><h1>Conversão de real para outras moedas</h1></center>
+			
+			<!--OPÇÕES DE MOEDAS PARA CONVERTER-->
+			<div id="div2">
+				<b><label id="text1">Converter para: </label></b><br />
+				<select id="opções">
+					<option></option>
+					<option value="1">Dólar Americano</option>
+					<option value="2">Dólar Canadense</option>
+					<option value="3">Real Brasileiro</option>
+					<option value="4">Euro</option>
+					<option value="5">Libra</option>
+					<option value="6">Peso Argentino</option>
+						
+				</select><br />
+			</div>
+			
+			<!--ENTRADA DO VALOR A SER CONVERTIDO-->
+			<div id="div3">
+				<b><label>Valor a ser convertido:</label></b><br />		
+				<input type="text" id="text2" />
+			</div>
+			
+			<!--botões CONVERTER E RESETAR-->
+			<input type="button" value="Converter" id="btn1" onClick="conversao()" />
+			<input type="reset" value="Limpar" id="btn2">
+			
+			<!--RESULTADO QUE SERÁ MOSTRADO NA TELA-->
+			<div id="div4">
+				<label id="resultado">Resultado:</label><br />
+				<span id="valorFinal"></span>
+			</div><br />
+			
+			<!--OBSERVAÇÕES-->
+			<div id="div5">
+				<ul>
+				<li>O cálculo efetuado tem caráter informativo e não substitui as disposições da norma cambial brasileira</li>				
+				<li>Data da cotação: 16/03/2021</li>
+			</ul>
+			</div>
+		</div>	
+	</form>	
+            
+</body>
+</html>
