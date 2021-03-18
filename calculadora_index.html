@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link type="text/css" rel="stylesheet" href="css/calculadora.css">
+        <script src="js/calculadora.js"></script>
+    </head>
+    <body>
+
+        <header id="header">
+            <div id="menu" class="menu">
+                <div id="logo">
+                    <a href="index.html">WGA</a>
+                </div>
+                <ul>
+                    <li id="li-fonte1"><a href="calculadora_index.html">Calculadora</li></a>
+                    <li id="li-fonte2"><a href="cadastro_index.html">Cadastro</li></a>
+                    <li id="li-fonte3"><a href="moeda_index.html">Moeda</li></a>
+                </ul>
+            </div>
+            <div id="banner-header">
+            </div>
+        </header>
+
+        <div id="calc_title">
+            <h2>Calculadoras para cálculos científicos, financeiros, matemáticos, escolares e comuns</h2>
+        </div>
+        <div id="info_calc">
+            <div id="info_box1"></div>
+            <div id="info_box2"></div>
+            <div id="info">
+            <h2>Calculadora simples</h2>
+            </div>
+        
+            
+            <div id="info1">
+                <h2>Calculadora científica</h2>
+            </div>
+        </div>
+        
+
+
+
+
+            <div id="calculadoras">
+
+            <form action="" name="calc2">
+                <div id="calculadora">
+                    <div id="disable_bt" class="disable"></div>
+                    <input type="text" id="visor" class="" name="visor"
+                        disabled>
+                    <div id="botoes">
+                        <input type=button value="ON/OFF" id="enable"
+                            class="quebra_regra" onclick="ligar(0)">
+                        <input type="button" value="7" id="botoes"
+                            class="inputs" class="inputs"
+                            onclick="botao2(value)">
+                        <input type="button" value="8" id="botoes"
+                            class="inputs" onclick="botao2(value)">
+                        <input type="button" value="9" id="botoes"
+                            class="inputs" onclick="botao2(value)">
+                        <input type="button" value="c" id="botoes"
+                            class="limpar" onclick="reseta2(value)">
+                        <input type="button" value="4" id="botoes"
+                            class="inputs" onclick="botao2(value)">
+                        <input type="button" value="5" id="botoes"
+                            class="inputs" onclick="botao2(value)">
+                        <input type="button" value="6" id="botoes"
+                            class="inputs" onclick="botao2(value)">
+                        <input type="button" value="*" id="botoes_especiais"
+                            onclick="botao2(value)">
+                        <input type="button" value="1" id="botoes"
+                            class="inputs" onclick="botao2(value)">
+                        <input type="button" value="2" id="botoes"
+                            class="inputs" onclick="botao2(value)">
+                        <input type="button" value="3" id="botoes"
+                            class="inputs" onclick="botao2(value)">
+                        <input type="button" value="-" id="botoes_especiais"
+                            onclick="botao2(value)">
+                        <input type="button" value="." id="botoes"
+                            class="inputs" onclick="botao2(value)">
+                        <input type="button" value="0" id="botoes"
+                            class="inputs" onclick="botao2(value)">
+                        <input type="button" value="/" id="botoes_especiais"
+                            onclick="botao2(value)">
+                        <input type="button" value="+" id="botoes_especiais"
+                            onclick="botao2(value)">
+                        <input type="button" value="="id="botoes" class="igual
+                            limpar" onclick="calcula2(value)">
+                    </div>
+                </div>
+        </form>
+
+    <div id="calculadora_cient">
+        <div id="disable1_bt" class="disable1"></div>
+        <form action="" name="calc">
+            <input type="text" id="visor_cient" class="" name="visor"
+                disabled>
+            <div id="botoes">
+                <input type=button value="ON/OFF" id="enable1"
+                    onclick="ligar(1)">
+                <input class="block" type="button" value="π"
+                    id="botoes_especiais" onclick="botao(value)">
+                <input type="button" value="sin" id="botoes_especiais"
+                    onclick="botao(value)">
+                <input type="button" value="cos" id="botoes_especiais"
+                    onclick="botao(value)">
+                <input type="button" value="tan" id="botoes_especiais"
+                    onclick="botao(value)">
+                <input type="button" value="c" id="botoes"
+                    class="limpar" onclick="reseta(value)">
+                <input type="button" value="log2" id="botoes_especiais"
+                    onclick="botao(value)">
+                <input type="button" value="log10" id="botoes_especiais"
+                    onclick="botao(value)">
+                <input type="button" value="^2" id="botoes_especiais"
+                    onclick="botao(value)">
+                <input type="button" value="^3" id="botoes_especiais"
+                    onclick="botao(value)">
+                <input type="button" value="√" id="botoes_especiais"
+                    onclick="botao(value)">
+                <input type="button" value="7" id="botoes"
+                    class="inputs" onclick="botao(value)">
+                <input type="button" value="8" id="botoes"
+                    class="inputs" onclick="botao(value)">
+                <input type="button" value="9" id="botoes"
+                    class="inputs" onclick="botao(value)">
+                <input type="button" value="+" id="botoes_especiais"
+                    onclick="botao(value)">
+                <input type="button" value="-" id="botoes_especiais"
+                    onclick="botao(value)">
+                <input type="button" value="4" id="botoes"
+                    class="inputs" onclick="botao(value)">
+                <input type="button" value="5" id="botoes"
+                    class="inputs" onclick="botao(value)">
+                <input type="button" value="6" id="botoes"
+                    class="inputs" onclick="botao(value)">
+                <input type="button" value="*" id="botoes_especiais"
+                    onclick="botao(value)">
+                <input type="button" value="/" id="botoes_especiais"
+                    onclick="botao(value)">
+                <input type="button" value="1" id="botoes"
+                    class="inputs" onclick="botao(value)">
+                <input type="button" value="2" id="botoes"
+                    class="inputs" onclick="botao(value)">
+                <input type="button" value="3" id="botoes"
+                    class="inputs" onclick="botao(value)">
+                <input type="button" value="0" id="botoes"
+                    class="inputs" onclick="botao(value)">
+                <input type="button" value="." id="botoes"
+                    class="inputs" onclick="botao(value)">
+                <input type="button" value="="id="botoes"
+                    class="igual_cient limpar" onclick="calcula(value)">
+            </div>
+        </form>
+    </div>
+</div>
+        
+
+<footer>
+    <strong>WGA | 2021</strong>
+    <small>Desenvolvido por Amanda Borim, Gustavo Ribeiro e Wallace Virgílio</small>
+</footer>
+
+
+    </body>
+</html>
