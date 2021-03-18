@@ -22,35 +22,40 @@
             
 			<!--OPÇÕES DE MOEDAS PARA CONVERTER-->
 			<div id="div3">
-				<b><label id="conversor" class="conversor" name="conversor" value="1,00" maxlength="7" >Converter de: </label></b><br />
-				<select id="option">
+				<b><label id="conversor" class="conversor">
+				<select onchange="conversao()" id="option">
 					<option>
-					<option value="1"  onchange="conversao()">Dólar Americano</option>
-					<option value="2" onchange="conversao.call(this, evento)">Dólar Canadense</option>
-					<option value="3" onchange="conversao.call(this, evento)">Euro</option>
-					<option value="4" onchange="conversao.call(this, evento)">Libra</option>
-					<option value="5" onchange="conversao.call(this, evento)">Peso Argentino</option>
-					</option>		
+					<option id="botao" value="1">Reais</option>
+					<option id="botao" value="2">Dólar Americano</option>
+					<option id="botao" value="3">Dólar Canadense</option>
+					<option id="botao" value="4">Euro</option>
+					<option id="botao" value="5">Libra</option>
+					<option id="botao" value="6">Peso Argentino</option>
+					
+					</option>	
+				</label>	
 				</select><br/>
 
 
             <!--OPÇÕES DE MOEDAS PARA CONVERTER-->
 
-				<b><label id="conversor2" class="conversor2" value="Converter2" onkeyup="conversor(2);" maxlength="7" >Converter para: </label></b><br />
-				<select id="option02">
+				<b><label id="conversor2" class="conversor2">
+					<select  onchange="conversao()" id="option2">
 					<option></option>
-					<option value="7" onclick="conversao(value)">Dólar Americano</option>
-					<option value="8" onchange="conversao.call(this, evento)">Dólar Canadense</option>
-					<option value="9" onchange="conversao.call(this, evento)">Real Brasileiro</option>
-					<option value="10" onchange="conversao.call(this, evento)">Euro</option>
-					<option value="11" onchange="conversao.call(this, evento)">Libra</option>
-					<option value="12" onchange="conversao.call(this, evento)">Peso Argentino</option>
+					<option id="botao2" value="1">Reais</option>
+					<option id="botao2" value="2">Dólar Americano</option>
+					<option id="botao2" value="3">Dólar Canadense</option>
+					<option id="botao2" value="4">Euro</option>
+					<option id="botao2" value="5">Libra</option>
+					<option id="botao2" value="6">Peso Argentino</option>
+				</label>
+			</select>
 						
 				</select><br/>
 			</div>
 
 			<!--botões CONVERTER E RESETAR-->
-			<button type="button" id="btn1" onclick="conversao()">Conversão</button>
+			<button type="button" onclick="resultado()" id="btn1">Conversão</button>
 			<button type="reset" value="Limpar" id="btn2">Reset</button>
 			
 			<!--RESULTADO QUE SERÁ MOSTRADO NA TELA-->
