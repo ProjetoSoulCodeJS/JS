@@ -12,31 +12,31 @@ valor = document.calc.visor.value = Math.sin(valor|resultado)
 }
 
 else if(num == 'cos'){
-    valor = document.calc.visor.value = Math.cos(valor|resultado)
+valor = document.calc.visor.value = Math.cos(valor|resultado)
 }
 
 else if(num == 'tan'){
-    valor = document.calc.visor.value = Math.tan(valor|resultado) 
+valor = document.calc.visor.value = Math.tan(valor|resultado) 
 }
 
 else if(num == 'log2'){
-    valor = document.calc.visor.value = Math.log2(valor|resultado) 
+valor = document.calc.visor.value = Math.log2(valor|resultado|1) 
 }
 
 else if(num == 'log10'){
-    valor = document.calc.visor.value = Math.log10(valor|resultado) 
+valor = document.calc.visor.value = Math.log10(valor|resultado|1) 
 }
 
 else if(num == '^2'){
-    valor = document.calc.visor.value = Math.pow(valor|resultado, 2) 
+valor = document.calc.visor.value = Math.pow(valor|resultado, 2) 
 }
 
 else if(num == '^3'){
-    valor = document.calc.visor.value = Math.pow(valor|resultado, 3) 
+valor = document.calc.visor.value = Math.pow(valor|resultado, 3) 
 }
 
 else if(num == '√'){
-    valor = document.calc.visor.value = Math.sqrt(valor|resultado) 
+valor = document.calc.visor.value = Math.sqrt(valor|resultado|0) 
 }
 
 else{
@@ -45,6 +45,8 @@ valor = document.calc.visor.value += num;
 }
 
 function reseta(num){
+valor = 0
+resultado = 0
 document.calc.visor.value = ''
 }
 
@@ -60,6 +62,8 @@ valor = document.calc2.visor.value += num;
 }
     
 function reseta2(num){
+valor = 0
+resultado = 0
 document.calc2.visor.value = ''
 }
     
@@ -73,7 +77,7 @@ if(n == 0){
 elemento = document.getElementById("disable_bt");
 elemento.classList.toggle("disable_change");
 elemento = document.getElementById("visor");
-elemento.classList.toggle("visor_cient2").
+elemento.classList.toggle("visor").
 elemento = document.getElementById("enable1").disabled ^= true
 }
 
