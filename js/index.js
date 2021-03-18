@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 function alteraTema(opcao){
@@ -27,33 +26,3 @@ function aumentaFonte(opcao){
     } 
 }
 
-=======
-
-
-function alteraTema(opcao){
-    if(opcao == 1){
-        document.getElementById('sobre').className = 'sobreTemaEscuro'
-        document.getElementById('menu').className = 'menuTemaEscuro'
-        document.getElementById('conteudo_box3').className = 'box3TemaEscuro'
-    } else{
-        document.getElementById('sobre').className = 'sobre'
-        document.getElementById('menu').className = 'menu'
-        document.getElementById('conteudo_box3').className = 'box3'
-    }
-}
-
-
-function aumentaFonte(opcao){
-    if(opcao == 1){
-        document.getElementById('li-fonte1').className = 'fonteGrande';
-        document.getElementById('li-fonte2').className = 'fonteGrande';
-        document.getElementById('li-fonte3').className = 'fonteGrande';
-        document.getElementById('p-fonte1').className = 'fonteGrande';
-        document.getElementById('p-fonte2').className = 'fonteGrande';
-        document.getElementById('p-fonte3').className = 'fonteGrande';
-        document.getElementById('p-fonte4').className = 'fonteGrande';
-        document.getElementById('p-fonte5').className = 'fonteGrande';
-    } 
-}
-
->>>>>>> 04cda40ff3b4bdb7bbb569b07bb831cc9e0e6b80
