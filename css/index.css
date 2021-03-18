@@ -14,6 +14,9 @@ body {
     font-size: 30px;
 }
 
+.fontePadrao{
+    font-size: 20px;
+}
 /*=== INCIO MENU TEMA CLARO ===*/
 .menu {
     display: flex;
