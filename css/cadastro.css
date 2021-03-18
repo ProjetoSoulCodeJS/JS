@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*=== MENU ===*/
+
+#logo a {
+    padding: 22px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(92, 94, 255);
+    font-size: 29px;
+}
+
+#logo a:hover {
+    background-color: #333;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    box-shadow: 0 1px 1px 1px rgb(202, 202, 202);
+}
+
+.menu .button {
+    padding: 10px;
+    border: none;
+    background-color: none;
+    font-size: 16px;
+    display: inline;
+}
+
+.menu .button a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.menu .button a:hover {
+    background-color: rgb(92, 94, 255);
+    color: white;
+    padding: 30px 10px;
+    transition: 300ms;
+}
+
+.menu ul {
+    justify-content: space-around;
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+    color: black;
+    transition: 300ms;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(92, 94, 255);
+    color: white;
+    padding: 30px;
+}
+
+/*=== MAIN ===*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*=== FORMULÁRIO ===*/
+
+form {
+    background-color: rgba(52, 108, 183);
+    width: 100%;
+    max-width: 450px;
+    margin: 25px;
+    padding: 21px 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 5px rgb(41, 41, 41);
+}
+
+form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-variant: small-caps;
+}
+
+div.input {
+    margin-bottom: 20px;
+    color: white;
+    margin: 5px auto;
+    text-align: center;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+button {
+    width: 50%;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+    transition: 0.4s;
+}
+
+/*=== DIV INFORMAÇÕES ===*/
+
+.coluna-direita {
+    text-align: center;
+}
+
+#info {
+    width: 350px;
+    height: 350px;
+    background-color: rgb(52, 108, 183);
+    box-shadow: 0px 5px 5px #333;
+    color: white;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+}
+
+#info h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#link {
+    text-align: center;
+    margin: 50px;
+}
+
+#link a {
+    text-decoration: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    color: #333;
+    box-shadow: 0px 2px 2px #333;
+}
+
+#link a:hover {
+    background-color: #333;
+    color: white;
+    transition: 0.4s;
+}
+
+/*=== FOOTER ===*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(35, 91, 246) 1%, rgb(92, 94, 255));
+    padding: 70px;
+    color: white;
+}
+
+footer strong {
+    padding-bottom: 10px;
+}
