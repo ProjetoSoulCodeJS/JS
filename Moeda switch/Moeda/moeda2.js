@@ -36,7 +36,7 @@ function conversao(){
 		}
 
 		else if (resultadoConversao == 4){
-		var resultadoTotal = moeda / 6.63
+		var resultadoTotal = moeda / 6.60912
 		}
 
 		else if (resultadoConversao == 5){
