@@ -28,7 +28,7 @@ function conversao(){
 		console.log(moeda)
 
 		if (resultadoConversao == 2){
-		var resultadoTotal = moeda / 5.53577
+		var resultadoTotal = moeda * valor * 5.53577
 		}
 
 		else if (resultadoConversao == 3){
@@ -36,7 +36,7 @@ function conversao(){
 		}
 
 		else if (resultadoConversao == 4){
-		var resultadoTotal = moeda / 6.60912
+		var resultadoTotal = moeda * valor * 6.60912
 		}
 
 		else if (resultadoConversao == 5){
