@@ -15,6 +15,8 @@
 			
 			valor = parseFloat(document.getElementById("valor").value);
 			var opcao = document.getElementById("option").value;
+			var opcao2 = document.getElementById("option02").value;
+			console.log (opcao2)
 			
 
 
@@ -52,5 +54,7 @@
 			if(opcao==6){
 			   resultado = document.getElementById("valorFinal").innerHTML = (valor/pesoArgentino).toFixed(2);			
 			}
+            if(opcao == 1 && opcao2 == 7)
+			  resultado = document.getElementById("valorFinal").innerHTML = (valor/2).toFixed(2);
 		}
 		
