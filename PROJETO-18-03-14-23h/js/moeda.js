@@ -9,42 +9,42 @@ function conversao() {
     return
     }
 
-    if (valores == 4.496 && valores2 == 0.0222){
+    else if (valores == 4.496 && valores2 == 0.0222){
     alert ("As moedas precisam ser diferentes")
     location.reload();
     return
     }
 
-    if (valores == 1 && valores2 == 1){
+    else if (valores == 1 && valores2 == 1){
     alert ("As moedas precisam ser diferentes")
     location.reload();
     return
     }
 
-    if (valores == 6.733 && valores2 == 0.148){
+    else if (valores == 6.733 && valores2 == 0.148){
     alert ("As moedas precisam ser diferentes")
     location.reload();
     return
     }
 
-    if (valores == 7.854 && valores2 == 0.127){
+    else if (valores == 7.854 && valores2 == 0.127){
     alert ("As moedas precisam ser diferentes")
     location.reload();
     return
     }
 
-    if (valores == 0.0607 && valores2 == 16.666){
+    else if (valores == 0.0607 && valores2 == 16.666){
     alert ("As moedas precisam ser diferentes")
     location.reload();
     return
     }
 
-    if (valores == 4.496 && valores2 == 0.0179 ){
+    else if (valores == 4.496 && valores2 == 0.0179 ){
     resultado = (valores * valores2 * input_texto * 10)
     return 
     }
 
-    if (valores == 1 && valores2 == 0.0179 ){
+    else if (valores == 1 && valores2 == 0.0179 ){
     resultado = (valores * valores2 * input_texto * 10)
     return 
     }
