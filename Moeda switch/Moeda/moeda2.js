@@ -1,15 +1,13 @@
-
+var resultadoTotala = 5
+var resultado = 9
+var opcao;
 
 function conversao(){
-       var valores = document.getElementById('option').value
-	   var valores2 = document.getElementById('option2').value
-	   var input_texto = document.getElementById('valor').value
+var opcao = parseInt(document.getElementById('option').value)
+console.log(opcao)
+return resultado + resultadoTotala + opcao
+}
 
-     resultado = (valores * valores2 * input_texto)
-	 console.log(resultado)
-	 console.log(valores)
-	 console.log(input_texto)
-
-	 document.getElementById('valorFinal').value = resultado
-
-	}
+function seila2(){
+console.log(conversao())
+}
