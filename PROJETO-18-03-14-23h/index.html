@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <title>WGA - Sistemas Automatizados</title>
+</head>
+
+<body>
+    <!--Cabeçalho do site-->
+    <header id="header">
+        <div id="menu" class="menu">
+            <div>
+                <div class="button" onclick="alteraTema(1)"><a href="#">Tema Escuro</a></div>
+                <div class="button" onclick="alteraTema(2)"><a href="#">Tema Claro</a></div>
+                <div class="button" onclick="aumentaFonte(1)"><a href="#">Aumentar Fonte</a></div>
+                <div class="button" onclick="aumentaFonte(2)"><a href="#">Fonte Padrão</a></div>
+            </div>
+            <ul>
+                <li id="li-fonte1"><a href="calculadora_index.html">Calculadora</li></a>
+                <li id="li-fonte2"><a href="cadastro_index.html">Cadastro</li></a>
+                <li id="li-fonte3"><a href="moeda_index.html">Moeda</li></a>
+            </ul>
+        </div>
+        <div id="banner-header">
+        </div>
+
+    </header>
+
+    <!--Conteúdo do site-->
+    <main>
+
+        <div id="sobre" class="sobre">
+            <h2>Sobre Nós</h2>
+            <p id="p-fonte1">A WGA é uma empresa que tem como objetivo trazer inovação e tecnologia aos mais diversos
+                setores.</p>
+            <p id="p-fonte2">Fundada por Wallace Virgílio, Gustavo Ribeiro e Amanda Borim, a WGA oferece serviços de
+                Desenvolvimento de Sites e Aplicações WEB utilizando as linguagens mais consolidadas do mercado, como
+                HTML, CSS e JavaScript.</p>
+            <h3>Confira abaixo algumas de nossas soluções!</h3>
+        </div>
+
+        <div id="conteudo-linha1">
+            <div id="conteudo_box1">
+                <h2>Calculadora</h2>
+                <p id="p-fonte3">Sistema automatizado de calculadora Simples e Científica.</p>
+                <div class="btn"><a href="calculadora_index.html">Saiba Mais</a></div>
+            </div>
+
+            <div id="conteudo_box2">
+                <h2>Cadastro</h2>
+                <p id="p-fonte4">Sistema para cadastro de usuários com validação de campos.</p>
+                <div class="btn"><a href="cadastro_index.html">Saiba Mais</a></div>
+            </div>
+        </div>
+
+        <div id="conteudo_box3" class="box3">
+            <h2>Conversão de moedas</h2>
+            <p id="p-fonte5">Sistema automatizado para conversão de moedas.</p>
+            <div class="btn"><a href="moeda_index.html">Saiba Mais</a></div>
+        </div>
+    </main>
+
+   <!--Rodapé-->
+    <footer>
+        <strong>WGA | 2021</strong>
+        <small>Desenvolvido por Amanda Borim, Gustavo Ribeiro e Wallace Virgílio</small>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
