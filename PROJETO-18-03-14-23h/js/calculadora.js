@@ -8,23 +8,23 @@ valor = document.calc.visor.value += 3.14159;
 }
 
 else if(num == 'sin'){
-valor = document.calc.visor.value = Math.sin(valor|resultado)
+valor = document.calc.visor.value = Math.sin(valor|resultado|0)
 }
 
 else if(num == 'cos'){
-    valor = document.calc.visor.value = Math.cos(valor|resultado)
+    valor = document.calc.visor.value = Math.cos(valor|resultado|0)
 }
 
 else if(num == 'tan'){
-    valor = document.calc.visor.value = Math.tan(valor|resultado) 
+    valor = document.calc.visor.value = Math.tan(valor|resultado|0) 
 }
 
 else if(num == 'log2'){
-    valor = document.calc.visor.value = Math.log2(valor|resultado) 
+    valor = document.calc.visor.value = Math.log2(valor|resultado|1) 
 }
 
 else if(num == 'log10'){
-    valor = document.calc.visor.value = Math.log10(valor|resultado) 
+    valor = document.calc.visor.value = Math.log10(valor|resultado|1) 
 }
 
 else if(num == '^2'){
@@ -45,6 +45,8 @@ valor = document.calc.visor.value += num;
 }
 
 function reseta(num){
+resultado = 0
+valor = 0
 document.calc.visor.value = ''
 }
 
@@ -60,6 +62,8 @@ valor = document.calc2.visor.value += num;
 }
     
 function reseta2(num){
+resultado = 0
+valor = 0
 document.calc2.visor.value = ''
 }
     
