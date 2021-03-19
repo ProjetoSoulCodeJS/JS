@@ -72,9 +72,11 @@ function VerificaCPF(strCpf) {
 // ---- Campo NOME para UPPERCASE ----  //
 function nomeLetrasMaiusculas() {
 
-    var entrada = document.getElementById('nome')
-    entrada.value = entrada.value.toUpperCase();
+var entrada = document.getElementById('nome')
+entrada.value = entrada.value.toUpperCase();
 
+document.getElementById('nome').onkeyup = nomeLetrasMaiusculas;
+this.value = this.value.replace(/[^\w\.]|\d/g, ' ');
 }
 
 

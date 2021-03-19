@@ -44,6 +44,7 @@ function conversao() {
     location.reload();
     return 
     }
+
     else if (valores == 4.496 && valores2 == 0.0179 ){
     resultado = (valores * valores2 * input_texto * 10)
     return 
@@ -54,14 +55,17 @@ function conversao() {
     return 
     }
 
+    else if (input_texto < 0){
+    alert("Não pode digitar números menor que 0")
+    location.reload();
+    return
+    }
     
 
     resultado = (valores * valores2 * input_texto)
     console.log(resultado)
     console.log(valores)
     console.log(input_texto)
-
-    
 
     // document.getElementById('valorFinal').value = resultado
     // document.getElementById("valorFinal").value = resultado.toFixed(2)
