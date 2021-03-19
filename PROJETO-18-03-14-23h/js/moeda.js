@@ -39,6 +39,11 @@ function conversao() {
     return
     }
 
+    else if (valores == 4.496 && valores2 == 0.222 ){
+    alert ("As moedas precisam ser diferentes")
+    location.reload();
+    return 
+    }
     else if (valores == 4.496 && valores2 == 0.0179 ){
     resultado = (valores * valores2 * input_texto * 10)
     return 
@@ -49,10 +54,14 @@ function conversao() {
     return 
     }
 
+    
+
     resultado = (valores * valores2 * input_texto)
     console.log(resultado)
     console.log(valores)
     console.log(input_texto)
+
+    
 
     // document.getElementById('valorFinal').value = resultado
     // document.getElementById("valorFinal").value = resultado.toFixed(2)

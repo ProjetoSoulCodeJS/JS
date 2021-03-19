@@ -4,7 +4,7 @@ var element;
 var element2;
 function botao(num){
 if (num == 'π'){
-valor = document.calc.visor.value += 3.14;
+valor = document.calc.visor.value += 3.14159;
 }
 
 else if(num == 'sin'){
