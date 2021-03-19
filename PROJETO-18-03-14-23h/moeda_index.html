@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--CALCULADORA PARA CONVERTER REAL PARA OUTRAS MOEDAS-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="css/moeda.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <script language="JavaScript" src="js/moeda.js"></script>
+</head>
+
+<body>
+    <!--Cabeçalho do site-->
+    <header id="header">
+        <div id="menu" class="menu">
+            <div id="logo">
+                <a href="index.html">WGA</a>
+            </div>
+            <ul>
+                <li id="li-fonte1"><a href="calculadora_index.html">Calculadora</li></a>
+                <li id="li-fonte2"><a href="cadastro_index.html">Cadastro</li></a>
+                <li id="li-fonte3"><a href="moeda_index.html">Moeda</li></a>
+            </ul>
+        </div>
+        <div id="banner-header">
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <div id="div1">
+                <h1>Conversão de moedas</h1>
+
+                <!--ENTRADA DO VALOR A SER CONVERTIDO-->
+                <div id="div2">
+                    <b><label>Valor a ser convertido:</label></b><br />
+                    <input type="text" id="valor" />
+                </div>
+
+
+                <!--OPÇÕES DE MOEDAS PARA CONVERTER-->
+                <div id="div3">
+                    <b><label id="conversor" class="conversor">Moeda 1</label>
+                            <select onchange="conversao()" id="option">
+                                <option>Escolha a Moeda</option>
+                                <option id="botao" value="5.584">Dólar Americano</option>
+                                <option id="botao" value="4.496">Dólar Canadense</option>
+                                <option id="botao" value="1">Real</option>
+                                <option id="botao" value="6.733">Euro</option>
+                                <option id="botao" value="7.854">Libra</option>
+                                <option id="botao" value="0.0607">Peso Argentino</option>
+
+                                
+                      
+                        </select><br />
+
+
+                        <!--OPÇÕES DE MOEDAS PARA CONVERTER-->
+
+                        <b><label id="conversor2" class="conversor2">Moeda 2</label>
+                            <select onchange="conversao()" id="option2">
+                                <option>Escolha a Moeda</option>
+                                <option id="botao" value="0.0179">Dólar Americano</option>
+                                <option id="botao" value="0.0222">Dólar Canadense</option>
+                                <option id="botao" value="1">Real</option>
+                                <option id="botao" value="0.148">Euro</option>
+                                <option id="botao" value="0.127">Libra</option>
+                                <option id="botao" value="16.666">Peso Argentino</option>
+                                </label>
+                            </select>
+                            </select><br />
+                </div>
+
+                <!--botões CONVERTER E RESETAR-->
+                <button type="button" onclick="result()" id="btn1">Conversão</button>
+                <button type="reset" value="Limpar" id="btn2">Reset</button>
+
+                <!--RESULTADO QUE SERÁ MOSTRADO NA TELA-->
+                <div id="div4">
+                    <label id="resultado">Resultado:</label><br />
+                  <span id="valorFinal"></span>
+                </div><br />
+
+                <!--OBSERVAÇÕES-->
+                <div id="div5">
+                    <ul>
+                        <li>O cálculo efetuado tem caráter informativo e não substitui as disposições da norma cambial
+                            brasileira</li>
+                        <li>Data da cotação: 16/03/2021</li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </main>
+    <!--Rodapé-->
+    <footer>
+        <strong>WGA | 2021</strong>
+        <small>Desenvolvido por Amanda Borim, Gustavo Ribeiro e Wallace Virgílio</small>
+    </footer>
+
+</body>
+
+</html>
