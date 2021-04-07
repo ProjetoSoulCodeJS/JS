@@ -15,12 +15,12 @@ Criar uma landing page que acesse outras 3 paginas cada uma com as funções pr�
 * A linkagem com as outras pagina pode ser feita por link interno ou menu.
 
 
-2.Página de Calculadora
+2. Página de Calculadora
 * O usuário pode selecionar o modelo para utilizar, o outro modelo tem que ficar indisponível(Simples e Científica)
 * ambas funcionais se habilitada ( Escolher habilitar por botão)
 * A científica deve ter as mesma funcionalidades da simples adicionando: Raiz quadrada , elevado a 2 , elevado a 3 e numero Pi.
 
-3.Página de Cadastro
+3. Página de Cadastro
 * Nome completo ( converter todas as letras para maiúscula)
 * Validar o CPF - Chamar um alert se invalido ou campo do formulário (vermelho)
 * Data de nascimento - Não pode ter idade negativa e mais de 130 anos ( considerar 16/03/ 2021) chamar um alert se invalido ou campo do formulário (vermelho)
